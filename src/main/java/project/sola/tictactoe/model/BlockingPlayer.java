@@ -48,8 +48,6 @@ public class BlockingPlayer extends RandomPlayer implements Constants{
             else{
                 makeMove();
             }
-//            board.display();
-//            opponent.play();
 
         }
         else{
@@ -63,7 +61,6 @@ public class BlockingPlayer extends RandomPlayer implements Constants{
         incrPlayCount(move);
         opponent.incrPlayCount(move);
         board.addMark(position1, position2, mark);
-        System.out.println("move made by computer: " + position1 + "" + position2 + "" + mark);
     }
 
     protected boolean testForBlocking(int pos1, int pos2){

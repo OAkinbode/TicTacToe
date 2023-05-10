@@ -49,7 +49,6 @@ public class SmartPlayer extends BlockingPlayer {
         row = Character.getNumericValue(move.charAt(0));
         col = Character.getNumericValue(move.charAt(2));
         board.addMark(row, col, mark);
-        System.out.println("move made by computer: " + row + "" + col + "" + mark);
     }
 
 
